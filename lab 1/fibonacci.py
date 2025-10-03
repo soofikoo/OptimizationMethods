@@ -1,0 +1,56 @@
+from typing import Callable
+
+def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6) -> float:
+    func_calls = 0
+
+    if rhs < lhs:
+        temp = 0
+        temp = rhs
+        rhs = lhs
+        lhs = temp
+
+    fib1 = 1
+    fib2 = 1
+    iteration = 0
+    while fib2 <= (rhs - lhs)/eps:
+        temp = fib2
+        fib2 = fib1 + fib2
+        fib1 = temp
+        iteration += 1
+    xr = lhs + (fib1 / fib2) * (rhs - lhs)
+    xl = lhs + ((fib2 - fib1) / fib2) * (rhs - lhs)
+    fl = f(xl)
+    fr = f(xr)
+
+    for i in range (iteration):
+        fibtemp = fib2
+        fib2 = fib1
+        fib1 = fibtemp - fib2
+        if f(xl) > f(xr):
+            lhs = xl
+            xl = xr
+            fl = fr
+            xr = lhs + (fib1 / fib2) * (rhs - lhs)
+            if abs(xr - xl) < (rhs - lhs) / 100:
+                xr = xr + (rhs - lhs) / 100
+            fr = f(xr)
+        else:
+            rhs = xr
+            xr = xl
+            fr = fl
+            xl = lhs + ((fib2 - fib1) / fib2) * (rhs - lhs)
+            if abs(xr - xl) < (rhs - lhs) / 100:
+                xl = xl - (rhs - lhs) / 100
+            fl = f(xl)
+
+    result = (lhs + rhs) / 2
+    accurancy = abs(rhs - lhs) / 2
+    iteration += 2
+    return result, iteration, accurancy
+
+if __name__ == "__main__":
+    f = lambda x: (x - 1) * (x - 5)
+    x_min, calls, accur = fibonacci(f, 0, 10)
+    print(f'Минимум найден в точке x = {x_min}')
+    print(f'Количество вызовов функции: {calls}')
+    print(f'Достигнутая точность: {accur}')
