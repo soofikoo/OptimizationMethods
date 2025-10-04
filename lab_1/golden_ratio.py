@@ -1,6 +1,8 @@
 from typing import Callable
+from lab_1.func_result import SearchResult, SearchMethodType
 
-def golden_ratio(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6, maxIterations: int = 1000) -> float:
+
+def golden_ratio(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6, maxIterations: int = 1000) -> SearchResult:
     iteration = 0
     func_calls = 0
     PSI = 0.61803398874989484820
@@ -32,13 +34,9 @@ def golden_ratio(f: Callable[[float], float], lhs: float, rhs: float, eps: float
     result = (lhs + rhs) / 2
     accuracy = abs(rhs - lhs) / 2
     func_calls = iteration + 2
-
-    return result, func_calls, accuracy
-
+    res = SearchResult(SearchMethodType.GOLDEN_RATIO, iteration, func_calls, accuracy, result)
+    return res
 
 if __name__ == "__main__":
     f = lambda x: (x - 1) * (x - 5)
-    x_min, calls, accur = golden_ratio(f, 0, 10)
-    print(f'Минимум найден в точке x = {x_min}')
-    print(f'Количество вызовов функции: {calls}')
-    print(f'Достигнутая точность: {accur}')
+    print(golden_ratio(f, 0, 10))

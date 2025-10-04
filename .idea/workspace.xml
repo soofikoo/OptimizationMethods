@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880d83e6-749e-4f8f-abe3-20c19039418a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab 1/BiSect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 1/fibonacci.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 1/golden_ratio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab 4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="880d83e6-749e-4f8f-abe3-20c19039418a" name="Changes" comment="add lab1 ver2.0">
+      <change afterPath="$PROJECT_DIR$/lab_1/func_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_1/bisect.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_1/bisect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_1/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_1/fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_1/golden_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_1/golden_ratio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.BiSect.executor": "Run",
+    "Python.bisect.executor": "Run",
     "Python.fibonacci.executor": "Run",
     "Python.golden_ratio.executor": "Run",
     "Python.main.executor": "Run",
@@ -75,6 +73,36 @@
       <recent name="C:\Users\user\PycharmProjects\OptimizationMethods" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptimizationMethods" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,17 +121,40 @@
       <updated>1758368623079</updated>
       <workItem from="1758368624181" duration="6580000" />
       <workItem from="1758904036839" duration="1227000" />
-      <workItem from="1759335794130" duration="12166000" />
+      <workItem from="1759335794130" duration="19917000" />
     </task>
+    <task id="LOCAL-00001" summary="add lab1">
+      <option name="closed" value="true" />
+      <created>1759524477159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759524477160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add lab1 ver2.0">
+      <option name="closed" value="true" />
+      <created>1759574241238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759574241238</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add lab1" />
+    <MESSAGE value="add lab1 ver2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lab1 ver2.0" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OptimizationMethods$golden_ratio.coverage" NAME="golden_ratio Coverage Results" MODIFIED="1759522693753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab 1" />
-    <SUITE FILE_PATH="coverage/OptimizationMethods$main.coverage" NAME="main Coverage Results" MODIFIED="1758372936454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab 1" />
-    <SUITE FILE_PATH="coverage/OptimizationMethods$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1759524410562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab 1" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$golden_ratio.coverage" NAME="golden_ratio Coverage Results" MODIFIED="1759579612761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_1" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$bisect.coverage" NAME="bisect Coverage Results" MODIFIED="1759579285423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_1" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$main.coverage" NAME="main Coverage Results" MODIFIED="1759580320327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1759579800847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_1" />
     <SUITE FILE_PATH="coverage/OptimizationMethods$BiSect.coverage" NAME="BiSect Coverage Results" MODIFIED="1759520554803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab 1" />
   </component>
 </project>

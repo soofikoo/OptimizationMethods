@@ -1,6 +1,7 @@
 from typing import Callable
+from lab_1.func_result import SearchMethodType, SearchResult
 
-def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6) -> float:
+def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6) -> SearchResult:
     func_calls = 0
 
     if rhs < lhs:
@@ -41,13 +42,11 @@ def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 
             fl = f(xl)
 
     result = (lhs + rhs) / 2
-    accurancy = abs(rhs - lhs) / 2
-    iteration += 2
-    return result, iteration, accurancy
+    accuracy = abs(rhs - lhs) / 2
+    func_calls = iteration + 2
+    res = SearchResult(SearchMethodType.FIBONACCI, iteration, func_calls, accuracy, result)
+    return res
 
 if __name__ == "__main__":
     f = lambda x: (x - 1) * (x - 5)
-    x_min, calls, accur = fibonacci(f, 0, 10)
-    print(f'Минимум найден в точке x = {x_min}')
-    print(f'Количество вызовов функции: {calls}')
-    print(f'Достигнутая точность: {accur}')
+    print(fibonacci(f, 0, 10))

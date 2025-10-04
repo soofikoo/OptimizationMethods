@@ -1,6 +1,8 @@
 from typing import Callable
+from lab_1.func_result import SearchMethodType, SearchResult
 
-def bisect(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6, maxIterations: int = 1000) -> float:
+
+def bisect(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6, maxIterations: int = 1000) -> SearchResult:
     iteration = 0
     func_calls = 0
 
@@ -25,11 +27,9 @@ def bisect(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-
     result = (lhs + rhs) / 2
     accuracy = abs(rhs - lhs) / 2
     func_calls = iteration * 2
+    res = SearchResult(SearchMethodType.BISECTION, iteration, func_calls, accuracy, result)
+    return res
 
-    return result, func_calls, accuracy
 if __name__ == "__main__":
     f = lambda x: (x-1)*(x - 5)
-    x_min, calls, accur = bisect(f, 0, 10)
-    print(f'Минимум найден в точке x = {x_min}')
-    print(f'Количество вызовов функции: {calls}')
-    print(f'Достигнутая точность: {accur}')
+    print(bisect(f, 0, 10))
