@@ -4,10 +4,7 @@ def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 
     func_calls = 0
 
     if rhs < lhs:
-        temp = 0
-        temp = rhs
-        rhs = lhs
-        lhs = temp
+        lhs, rhs = rhs, lhs
 
     fib1 = 1
     fib2 = 1

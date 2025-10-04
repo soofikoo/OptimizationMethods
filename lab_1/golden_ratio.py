@@ -6,10 +6,7 @@ def golden_ratio(f: Callable[[float], float], lhs: float, rhs: float, eps: float
     PSI = 0.61803398874989484820
 
     if rhs < lhs:
-        temp = 0
-        temp = rhs
-        rhs = lhs
-        lhs = temp
+        lhs, rhs = rhs, lhs
 
     xr = lhs + PSI * (rhs - lhs)
     xl = rhs - PSI * (rhs - lhs)

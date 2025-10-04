@@ -5,10 +5,7 @@ def bisect(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-
     func_calls = 0
 
     if rhs < lhs:
-        temp = 0
-        temp = rhs
-        rhs = lhs
-        lhs = temp
+        lhs, rhs = rhs, lhs
 
     while iteration < maxIterations:
         if abs(rhs - lhs) < 2 * eps:
