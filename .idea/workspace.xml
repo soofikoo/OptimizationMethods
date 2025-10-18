@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880d83e6-749e-4f8f-abe3-20c19039418a" name="Changes" comment="add lab1 ver3.0">
-      <change afterPath="$PROJECT_DIR$/lab_2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_2/fibonachi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_2/func_res.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_2/golden_ratio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_2/per_cord_descend.py" afterDir="false" />
+    <list default="true" id="880d83e6-749e-4f8f-abe3-20c19039418a" name="Changes" comment="add fibonacci in lab2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab 2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2/bisect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_1/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_1/fibonacci.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_1/func_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_1/func_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,30 +46,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.BiSect.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bisect.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Python.golden_ratio.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.BiSect.executor": "Run",
+    "Python.bisect.executor": "Run",
+    "Python.fibonacci.executor": "Run",
+    "Python.fibonachi.executor": "Run",
+    "Python.golden_ratio.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\OptimizationMethods" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.golden_ratio">
+  <component name="RunManager" selected="Python.main">
     <configuration name="bisect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OptimizationMethods" />
       <option name="ENV_FILES" value="" />
@@ -93,6 +86,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_2/bisect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fibonachi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OptimizationMethods" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_2/fibonachi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,9 +165,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.fibonachi" />
         <item itemvalue="Python.golden_ratio" />
         <item itemvalue="Python.bisect" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +192,7 @@
       <workItem from="1758904036839" duration="1227000" />
       <workItem from="1759335794130" duration="24719000" />
       <workItem from="1759869755009" duration="614000" />
-      <workItem from="1760719337233" duration="7958000" />
+      <workItem from="1760719337233" duration="9264000" />
     </task>
     <task id="LOCAL-00001" summary="add lab1">
       <option name="closed" value="true" />
@@ -201,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759580503953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add bisect and golden ratio in lab 2">
+      <option name="closed" value="true" />
+      <created>1760797358472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760797358472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add fibonacci in lab2">
+      <option name="closed" value="true" />
+      <created>1760797937150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760797937150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,12 +244,15 @@
     <MESSAGE value="add lab1" />
     <MESSAGE value="add lab1 ver2.0" />
     <MESSAGE value="add lab1 ver3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lab1 ver3.0" />
+    <MESSAGE value="add bisect and golden ratio in lab 2" />
+    <MESSAGE value="add fibonacci in lab2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fibonacci in lab2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OptimizationMethods$golden_ratio.coverage" NAME="golden_ratio Coverage Results" MODIFIED="1759579612761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_1" />
-    <SUITE FILE_PATH="coverage/OptimizationMethods$main.coverage" NAME="main Coverage Results" MODIFIED="1759588372924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$golden_ratio.coverage" NAME="golden_ratio Coverage Results" MODIFIED="1760797126918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_2" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$fibonachi.coverage" NAME="fibonachi Coverage Results" MODIFIED="1760797786934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_2" />
     <SUITE FILE_PATH="coverage/OptimizationMethods$bisect.coverage" NAME="bisect Coverage Results" MODIFIED="1760775088247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_2" />
+    <SUITE FILE_PATH="coverage/OptimizationMethods$main.coverage" NAME="main Coverage Results" MODIFIED="1760798380323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/OptimizationMethods$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1759579800847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_1" />
     <SUITE FILE_PATH="coverage/OptimizationMethods$BiSect.coverage" NAME="BiSect Coverage Results" MODIFIED="1759520554803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab 1" />
   </component>
