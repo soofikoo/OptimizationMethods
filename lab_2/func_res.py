@@ -1,9 +1,11 @@
 from enum import Enum
+import numpy as np
 
 class SearchMethodType(Enum):
     BISECTION = "bisection"
     GOLDEN_RATIO = "golden_ratio"
     FIBONACCI = "fibonacci"
+    PER_CORD_DESCEND ="per_cord"
     NONE = "none"
 
 class SearchResult:
@@ -11,9 +13,9 @@ class SearchResult:
     iterations: int
     function_probes: int
     accuracy: float
-    result: float
+    result: np.ndarray
 
-    def __init__(self, type: SearchMethodType, iterations: int, function_probes: int, accuracy: float, result: float):
+    def __init__(self, type: SearchMethodType, iterations: int, function_probes: int, accuracy: float, result: np.ndarray):
         self.type = type
         self.iterations = iterations
         self.function_probes = function_probes

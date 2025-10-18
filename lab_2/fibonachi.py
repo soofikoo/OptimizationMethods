@@ -1,5 +1,6 @@
 from typing import Callable
 from lab_1.func_result import SearchMethodType, SearchResult
+import numpy as np
 
 def fibonacci(f: Callable[[float], float], lhs: float, rhs: float, eps: float = 1e-6*1.25) -> SearchResult:
     func_calls = 0
