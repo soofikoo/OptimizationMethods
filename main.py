@@ -17,6 +17,7 @@ def func_lab_2():
     print({lab_2.bisect(test_f2, np.array([-5, -5, -5]), np.array([5, 5, 5]))})
     print({lab_2.golden_ratio(test_f2, np.array([-5, -5, -5]), np.array([5, 5, 5]))})
     print({lab_2.fibonachi(test_f2, np.array([-5, -5, -5]), np.array([5, 5, 5]), 1e-6)})
+    print({lab_2.per_cord_descend(test_f2, np.array([0, 0, 0]), 1e-6, 100, 1.0)})
 
 if __name__ == "__main__":
     #func_lab_1()
